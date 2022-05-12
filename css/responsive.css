@@ -1,0 +1,156 @@
+@media screen and (max-width:960px) {
+    html{
+        font-size: 5px;
+    }
+    .hidden_960{
+        display: none;
+    }
+    .visible_960{
+        display: block;
+    }
+    .hidden_960_inline{
+        display: none;
+    }    
+    .visible_960_inline{
+        display: inline;
+    }
+
+    header #header_left{
+        padding: 10px;
+    }
+   
+    #news_parent > div{
+        padding: 20px 20px;
+    }
+   
+
+    /* 理由 */
+    #reason > div:nth-child(1) > div{
+        width: 700px;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width:760px) {
+    html{
+        font-size: 4px;
+    }
+
+      /* 理由 */
+      #reason > div:nth-child(1) > div{
+        width: 560px;
+    }
+
+    /* 動画 */
+    #movie .d_flex iframe{
+        height: 30vw;
+    }
+}
+
+@media screen and (max-width:640px) {
+    html{
+        font-size: 6px;
+    }
+
+    .fs_16_sp{font-size: 1.6rem !important;}
+    .fs_17_sp{font-size: 1.7rem !important;}
+    .fs_18_sp{font-size: 1.8rem !important;}
+    .fs_21_sp{font-size: 2.1rem !important;}
+    .fs_22_sp{font-size: 2.2rem !important;}
+    .fs_23_sp{font-size: 2.3rem !important;}
+    .fs_24_sp{font-size: 2.4rem !important;}
+    .fs_29_sp{font-size: 2.9rem !important;}
+    .fs_33_sp{font-size: 3.3rem !important;}
+    .fs_38_sp{font-size: 3.8rem !important;}
+    .fs_45_sp{font-size: 4.5rem !important;}
+    .fs_56_sp{font-size: 5.6rem !important;}
+    .fs_101_sp{font-size: 10.1rem !important;}
+
+    .hidden_640{
+        display: none;
+    }
+    .visible_640{
+        display: block;
+    }
+    .hidden_640_inline{
+        display: none;
+    }    
+    .visible_640_inline{
+        display: inline;
+    }
+    .hidden_640_flex{
+        display: none;
+    }    
+    .visible_640_flex{
+        display: flex;
+    }
+
+    header #header_logo_sp{
+        width: 20%;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+    header #header_right{
+        
+    }
+
+    #corona{
+        padding: 10px;
+    }
+    #corona img{
+        margin-top: 20px;
+        width: 60%;
+    }
+
+    #entrust .entrust_contents .d_flex > div:nth-child(2){
+        width: 100%;
+    }
+
+    /* 理由 */
+    #reason > div:nth-child(1) > div{
+        width: auto;
+    }
+    #reason > .reason_contents{
+        background-image: none !important;
+    }
+
+    #worries > div:nth-child(2) > div{
+        width: 100%;
+        padding: 0;
+    }
+
+    #voice > div:nth-child(2),
+    #voice > div:nth-child(3){
+       display: block;
+    }
+    #voice .voice_contents{
+        width: 95%;
+        margin: auto;
+    }
+
+    /* 介護士 */
+    #doctor > div:nth-child(2),
+    #doctor > div:nth-child(3){
+       display: block;
+    }
+    #doctor .doctor_contents{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:440px) {
+    html{
+        font-size: 3.5px;
+    }
+    #corona img{
+        width: 90%;
+    }
+    #information > div > div:nth-child(1){
+        width: 50px !important;
+        height: 50px !important;
+    }
+}
+
+@media screen and (max-width:375px) {
+    
+}

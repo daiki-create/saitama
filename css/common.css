@@ -1,0 +1,114 @@
+.mw_960{
+    max-width: 960px;
+    margin: auto;
+}
+.mw_1200{
+    max-width: 1200px;
+    margin: auto;
+}
+.d_flex{
+    display: flex;
+    align-items: center;
+}
+.ws_nowrap{
+    white-space: nowrap;
+}
+.ta_center{
+    text-align: center;
+}
+
+/* color */
+.color_blue{color: #0071a3;}
+.color_white{color: white;}
+.color_red{color: #d3787f;}
+.color_red_2{color: #c06978;}
+.color_yellow{color: #ffff00;}
+.color_dark_red{color: #ff0000;}
+
+/* background color */
+.bc_blue{background-color: #0071a3;}
+.bc_red{background-color: #d3787f;}
+.bc_red_2{background-color: #c06978;}
+.bc_light_blue{background-color: #d2e1eb;}
+.bc_light_blue_2{background-color: #d2e1eb;}
+.bc_light_gray{background-color: #dedbd3;}
+.bc_white{background-color: white;}
+.bc_light_pink{background-color: #f8e8eb;}
+.bc_light_pink_2{background-color: rgb(250, 240, 241);}
+.bc_gray{background-color: #ebfcfa;}
+
+/* font size */
+.fs_14{font-size: 1.4rem;}
+.fs_20{font-size: 2.0rem;}
+.fs_21{font-size: 2.1rem;}
+.fs_22{font-size: 2.2rem;}
+.fs_24{font-size: 2.4rem;}
+.fs_26{font-size: 2.6rem;}
+.fs_28{font-size: 2.8rem;}
+.fs_30{font-size: 3.0rem;}
+.fs_32{font-size: 3.2rem;}
+.fs_33{font-size: 3.3rem;}
+.fs_34{font-size: 3.4rem;}
+.fs_35{font-size: 3.5rem;}
+.fs_36{font-size: 3.6rem;}
+.fs_37{font-size: 3.7rem;}
+.fs_38{font-size: 3.8rem;}
+.fs_39{font-size: 3.9rem;}
+.fs_41{font-size: 4.1rem;}
+.fs_42{font-size: 4.2rem;}
+.fs_44{font-size: 4.4rem;}
+.fs_45{font-size: 4.5rem;}
+.fs_47{font-size: 4.7rem;}
+.fs_48{font-size: 4.8rem;}
+.fs_49{font-size: 4.9rem;}
+.fs_52{font-size: 5.2rem;}
+.fs_53{font-size: 5.3rem;}
+.fs_56{font-size: 5.6rem;}
+.fs_58{font-size: 5.8rem;}
+.fs_60{font-size: 6.0rem;}
+.fs_62{font-size: 6.2rem;}
+.fs_64{font-size: 6.4rem;}
+.fs_67{font-size: 6.7rem;}
+.fs_68{font-size: 6.8rem;}
+.fs_69{font-size: 6.9rem;}
+.fs_70{font-size: 7.0rem;}
+.fs_74{font-size: 7.4rem;}
+.fs_75{font-size: 7.5rem;}
+.fs_91{font-size: 9.1rem;}
+.fs_92{font-size: 9.2rem;}
+.fs_108{font-size: 10.8rem;}
+.fs_127{font-size: 12.7rem;}
+
+/* font family */
+.m_plus_rounded_500{
+    font-family: 'M PLUS Rounded 1c', sans-serif !important;
+    font-weight: 500; 
+}
+.m_plus_rounded_700{
+    font-family: 'M PLUS Rounded 1c', sans-serif !important;
+    font-weight: 700; 
+}
+.m_plus_rounded_800{
+    font-family: 'M PLUS Rounded 1c', sans-serif !important;
+    font-weight: 800; 
+}
+.m_plus_rounded_900{
+    font-family: 'M PLUS Rounded 1c', sans-serif !important;
+    font-weight: 900; 
+}
+.noto_sans_jp_500{
+    font-family: 'Noto Sans JP', sans-serif !important;
+    font-weight: 500;
+}
+.noto_sans_jp_700{
+    font-family: 'Noto Sans JP', sans-serif !important;
+    font-weight: 700;
+}
+.noto_sans_jp_900{
+    font-family: 'Noto Sans JP', sans-serif !important;
+    font-weight: 900;
+}
+.sawarabi_mincho{
+    font-family: 'Sawarabi Mincho', serif;    
+    font-weight: 700;
+}
