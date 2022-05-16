@@ -142,7 +142,7 @@ header #header_right #hamburger{
     z-index: 9999;/*ボタンを最前面に*/
   top:0;
   cursor: pointer;
-    /* width: 180px; */
+    width: 80px;
     height:50px;
 }
   
@@ -269,7 +269,7 @@ header #header_right #hamburger{
 }
 #reason .reason_contents p:nth-child(2),
 #reason .reason_contents p:nth-child(3),
-#reason .reason_contents p:nth-child(4){
+#reason .reason_contents div:nth-child(4){
     text-shadow:3px 3px 5px #FFF;
 }
 #reason > .reason_contents{
@@ -503,10 +503,12 @@ header #header_right #hamburger{
 }
 
 /* よくある質問 */
-#faq > div:nth-child(1){
+.title_blue{
     border-top: solid 3px #0071a3;
     border-bottom: solid 3px #0071a3;
     padding: 10px;
+}
+#faq > div:nth-child(1){
     margin-top: 20px;
 }
 #faq > div:nth-child(1) > div > div:nth-child(1){
@@ -527,11 +529,9 @@ header #header_right #hamburger{
 }
 
 /* プライバシーポリシー */
-#privacy_policy{
-    margin: 20px 1rem;
-}
 #privacy_policy section{
 	padding: 10px;
+    margin: 10px 5px;
 	background-color: #fffff1;
 	height: 200px;
 	overflow: scroll;
