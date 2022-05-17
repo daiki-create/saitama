@@ -81,7 +81,7 @@ header #header_right #hamburger{
 #g-nav{
     /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
     position:fixed;
-    z-index: 999;
+    z-index: 9999;
     /*ナビのスタート位置と形状*/
   top:-120%;
     left:0;
@@ -101,7 +101,7 @@ header #header_right #hamburger{
 #g-nav.panelactive #g-nav-list{
     /*ナビの数が増えた場合縦スクロール*/
     position: fixed;
-    z-index: 999; 
+    z-index: 9999; 
     width: 100%;
     height: 100vh;/*表示する高さ*/
     overflow: auto;
@@ -112,7 +112,7 @@ header #header_right #hamburger{
 #g-nav ul {
     /*ナビゲーション天地中央揃え*/
     position: absolute;
-    z-index: 999;
+    z-index: 9999;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
@@ -337,7 +337,7 @@ header #header_right #hamburger{
     background-position: right top; 
 }
 #worries > div:nth-child(2) > div{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
     width: 60%;
     padding: 20px;
 }
@@ -413,7 +413,7 @@ header #header_right #hamburger{
 #voice .voice_contents .bc_white{
     display: flex;
 }
-#voice .voice_contents > .bc_white > div:nth-child(1){
+#voice .voice_contents > .bc_white:nth-child(1) > div:nth-child(1){
     width: 40%;
     padding: 10px;
 }

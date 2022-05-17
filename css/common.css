@@ -24,6 +24,7 @@
 .color_red_2{color: #c06978;}
 .color_yellow{color: #ffff00;}
 .color_dark_red{color: #ff0000;}
+.color_white{color: white;}
 
 /* background color */
 .bc_blue{background-color: #0071a3;}
@@ -36,6 +37,12 @@
 .bc_light_pink{background-color: #f8e8eb;}
 .bc_light_pink_2{background-color: rgb(250, 240, 241);}
 .bc_gray{background-color: #ebfcfa;}
+.back_ground_color_green{
+    background-color: #4ba290;
+}
+.back_ground_color_red{
+    background-color: #d36978;
+}
 
 /* font size */
 .fs_14{font-size: 1.4rem;}
