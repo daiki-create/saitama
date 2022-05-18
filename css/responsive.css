@@ -433,6 +433,10 @@
         margin-left: 30px;
         white-space: nowrap;
     }
+    #privacy_policy section{
+        width: auto;
+        margin: 10px;
+    }
 
     /* メールフォーム */
     #contact > div:nth-child(1) > div > div:nth-child(2){
