@@ -531,7 +531,8 @@ header #header_right #hamburger{
 /* プライバシーポリシー */
 #privacy_policy section{
 	padding: 10px;
-    margin: 10px 5px;
+    margin: 10px auto;
+    width: 96%;
 	background-color: #fffff1;
 	height: 200px;
 	overflow: scroll;
