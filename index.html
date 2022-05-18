@@ -125,6 +125,7 @@
             <!-- 新着情報 -->
             <div id="news_parent" class="bc_light_gray">
                 <div class="bc_white mw_960">
+                    <link rel="stylesheet" href="contents-maker/css/my_style.css">
                     <p class="fs_42 fs_36_sp color_blue">What’s New</p>
                     <div id="news">
                         
@@ -146,7 +147,7 @@
                                 <div class="hidden_640"><img src="img/doctors.png" alt=""></div>
                                 <div>
                                     <p class="color_white bc_red fs_49 fs_24_sp ta_center">安心の2万件以上のリハビリ実績</p>
-                                    <p class="fs_39 fs_24_sp">
+                                    <p class="fs_39 fs_22_sp ws_nowrap">
                                         脳梗塞、脳出血後遺症専門の<br>
                                         「さいたま訪問リハビリセンター」が、<br>
                                         あなたの悩みを解決し、リハビリを<br class="visible_640">サポートします
@@ -578,13 +579,13 @@
                         </div>
                     </div>
                     <div class="faq_contents">
-                        <p class="color_blue">Q.介護施設内でも訪問施術マッサージが受けられる？</p>
+                        <p class="color_blue">Q.介護施設内でも訪問施術マッサージが<br class="visible_640">受けられる？</p>
                         <div>
                             特別養護老人ホームやグループホームや有料老人ホームなどでの施術も行っています。
                         </div>
                     </div>
                     <div class="faq_contents">
-                        <p class="color_blue">Q.脳梗塞・脳出血の後遺症以外でも受けられるの？</p>
+                        <div class="color_blue">Q.脳梗塞・脳出血の後遺症以外でも<br class="visible_640">受けられるの？</div>
                         <div>
                             もちろん可能です。パーキンソン病、筋萎縮性側索硬化症（ALS）、脊髄梗塞の方もリハビリ・マッサージを受けてられます。またその他の症状の方でも施術を受けられることがありますのでご相談ください。
                         </div>
@@ -633,17 +634,17 @@
                     <form action="mail/php/mailform.php" method="post" id="mail_form">
                         <dl>
                             <dt class="fs_21_sp">お名前</dt>
-                            <dd class="required fs_21_sp"><input type="text" id="name_1" name="name_1" placeholder="佐藤"　value="" /> <input type="text" id="name_2" name="name_2" placeholder="たろう"　value="" /></dd>
+                            <dd class="required fs_16_sp"><input type="text" id="name_1" name="name_1" placeholder="佐藤"　value="" /> <input type="text" id="name_2" name="name_2" placeholder="たろう"　value="" /></dd>
                             <dt class="fs_21_sp">メールアドレス</dt>
-                            <dd class="required fs_21_sp"><input type="email" id="mail_address" name="mail_address" placeholder="info@xxx.jp"　value="" /></dd>
+                            <dd class="required fs_16_sp"><input type="email" id="mail_address" name="mail_address" placeholder="info@xxx.jp"　value="" /></dd>
                             <dt class="fs_21_sp">郵便番号</dt>
-                            <dd class="required fs_21_sp"><input type="text" id="postal" name="postal" placeholder="ハイフン不要"　value="" onkeyup="AjaxZip3.zip2addr( this,'','address','address' );" />　<a href="http://www.post.japanpost.jp/zipcode/" target="_blank">郵便番号検索</a></dd>
+                            <dd class="required fs_16_sp"><input type="text" id="postal" name="postal" placeholder="ハイフン不要"　value="" onkeyup="AjaxZip3.zip2addr( this,'','address','address' );" />　<a href="http://www.post.japanpost.jp/zipcode/" target="_blank">郵便番号検索</a></dd>
                             <dt class="fs_21_sp">ご住所</dt>
-                            <dd class="fs_21_sp"><input type="text" id="address" name="address" placeholder="埼玉県さいたま市"　value="" /></dd>
+                            <dd class="fs_16_sp"><input type="text" id="address" name="address" placeholder="埼玉県さいたま市"　value="" /></dd>
                             <dt class="fs_21_sp">お電話番号</dt>
-                            <dd class="required fs_21_sp"><input type="tel" id="phone" name="phone" placeholder="ハイフン不要"　value="" /></dd>
+                            <dd class="required fs_16_sp"><input type="tel" id="phone" name="phone" placeholder="ハイフン不要"　value="" /></dd>
                             <dt class="fs_21_sp">お問い合わせの内容</dt>
-                            <dd class="required fs_21_sp"><textarea id="contents" name="contents" placeholder="お困りになっている方の状態や症状を記載ください"　cols="40" rows="5"></textarea></dd>
+                            <dd class="required fs_16_sp"><textarea id="contents" name="contents" placeholder="お困りになっている方の状態や症状を記載ください"　cols="40" rows="5"></textarea></dd>
                         </dl>
                         <p id="form_submit" class="fs_21_sp"><input type="button" id="form_submit_button" value="送信する" /></p>
                     </form>

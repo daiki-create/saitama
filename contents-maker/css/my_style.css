@@ -2,3 +2,36 @@
     display: none;
 } */
 
+.news_contents_left_top{
+    display: flex;
+    align-items: center;
+}
+.news_contents_bottom_sp{
+    display: none !important;
+}
+
+@media screen and (max-width:640px) {
+    .news_contents_left_top{
+        display: block;
+        font-size: 2.1rem;
+    }
+    .news_contents_left_top dd:nth-child(2){
+        text-align: center;
+        padding: 0 !important;
+        margin-top: 5px;
+    }
+    .news_contents_bottom{
+        display: none !important;
+    }
+    .news_contents_bottom_sp{
+        display: block !important;
+        font-size: 1.8rem !important;
+    }
+    .fs_36_sp{
+        font-size: 3.6rem !important;
+        text-align: center;
+    }
+    .news_contents_img{
+        margin: 0 15px 0 0  !important;
+    }
+}

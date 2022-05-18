@@ -123,6 +123,12 @@
         padding-left: 10px;
         padding-bottom: 15px;
     }
+    #header_left div:nth-child(1) p{
+        padding-top: 5px;
+    }
+    header #header_title_sp{
+        padding: 10px 0;
+    }
     header #header_title_sp .d_flex{
         margin-left: 50%;
         transform: translateX(-50%);
@@ -206,6 +212,9 @@
     }
 
     /* 新着情報 */
+    #news_parent{
+        padding: 10px;
+    }
     #information > div dd{
         font-size: 1.8rem;
     }
@@ -282,7 +291,7 @@
         background-size: 100%;
         background-position: center top;
         height: 110vw; 
-        transform: translateY(-100px);
+        /* transform: translateY(-100px); */
         z-index: 0 !important;
     }
 
@@ -317,14 +326,19 @@
     }
     #saitama_area > .color_blue > div:nth-child(2){
         background-color: #e9edef;
-        padding: 15px;
+        padding: 10px;
     }
     #saitama_area > .color_blue > div:nth-child(3){
-        padding: 15px;
+        padding: 15px 15px 10px 15px;
         background-repeat: no-repeat;
         background-image: url('../img/saitama_area.jpg');
-        background-size: 100%;
-        background-position: right top;     
+        background-size: 110%;
+        background-position: center top;     
+        height: auto;
+    }
+    #saitama_area > .color_blue > div:nth-child(3) > p{
+        text-shadow:3px 3px 5px #FFF !important;
+        line-height: 1.8em !important;
     }
     #saitama_area > .color_blue > div:nth-child(3) > div:nth-child(1){
         width: 50vw;
@@ -332,8 +346,8 @@
         padding: 2px 0;
         background-color: #d3787f;
         color: #e3d521;
-        margin-bottom: 20px;
-        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-top: 15px;
     }
     #saitama_area .color_blue p:nth-child(2){
         margin-bottom: 0;
@@ -381,6 +395,11 @@
         margin: auto;
     }
 
+    /* お問い合わせリンク */
+    #inquiry{
+        padding: 0;
+    }
+
     /* 介護士 */
     #doctor > div:nth-child(2),
     #doctor > div:nth-child(3){
@@ -388,9 +407,16 @@
     }
     #doctor .doctor_contents{
         width: auto;
+        padding-top: 0;
     }
 
     /* よくある質問 */
+    #faq > div:nth-child(1) > div > div:nth-child(1){
+        padding: 0;
+    }
+    #faq > div:nth-child(1) > div > div:nth-child(2){
+        padding: 0;
+    }
     #faq .d_flex{
         display: block;
     }
@@ -398,7 +424,22 @@
         width: 60%;
         margin: 5px auto 0 auto;
     }
+    #faq .faq_contents div:nth-child(2){
+        padding-left: 20px;
+    }
 
+    /* プライバシーポリシー */
+    #privacy_policy > div:nth-child(1) > div > div:nth-child(2){
+        margin-left: 30px;
+        white-space: nowrap;
+    }
+
+    /* メールフォーム */
+    #contact > div:nth-child(1) > div > div:nth-child(2){
+        margin-left: 100px;
+        white-space: nowrap;
+    }
+    
     /* フィックスコントロール */
     /* footer{
         width: 100% !important;

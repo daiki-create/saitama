@@ -376,10 +376,10 @@ header #header_right #hamburger{
 #saitama_area{
     background-repeat: no-repeat;
     background-image: url('../img/saitama_area.jpg');
-    background-size: 100%;
-    background-position: right top; 
+    background-size: 96%;
+    background-position: center top; 
     padding: 50px 30px 30px 30px;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
 }
 #saitama_area > div:nth-child(1){
     width: 250px;

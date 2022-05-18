@@ -303,16 +303,16 @@ EOM;
 
 				<div{$data_order} style='display:flex;align-items:center;border-top:none;'>
 					{$image_html}
-					<div id="left-{$row['id']}" style='width:20%;height:180px;margin:20px'>
+					<div id="left-{$row['id']}" class="news_contents_img" style='width:20%;height:180px;margin:20px'>
 						<div id="input-img-{$row['id']}"><img src="contents-maker/thumbnail/{$row['img']}" style="width:100%;height:100%; object-fit:cover"></div>
 					</div>
 					<div id="center-{$row['id']}" style='width:80%'>
 						<dl>
-							<div style='display:flex;align-items:center'>
+							<div class='news_contents_left_top'>
 								<dd id="input-date-{$row['id']}" style='font-weight:bold;font-sise:larger;min-width:18%'>{$date}</dd>
 								<dd id="input-title-{$row['id']}" style='font-weight:bold;color:white;background-color:#4169e1;border-radius:10px;padding:1px 20px;max-width:65%'>{$row['title']}</dd>
 							</div>
-							<dd onclick='show_contents({$row['id']})' id="input-contents-{$row['id']}" style='margin-top:10px;cursor:pointer;
+							<dd class='news_contents_bottom' onclick='show_contents({$row['id']})' id="input-contents-{$row['id']}" style='margin-top:10px;cursor:pointer;
 							display: -webkit-box;
 							-webkit-line-clamp: 4;
 							-webkit-box-orient: vertical;
@@ -320,6 +320,11 @@ EOM;
 						</dl>
 					</div>
 				</div>
+				<div class='news_contents_bottom_sp' onclick='show_contents({$row['id']})' id="input-contents-{$row['id']}" style='margin-top:10px;cursor:pointer;
+							display: -webkit-box;
+							-webkit-line-clamp: 4;
+							-webkit-box-orient: vertical;
+							overflow: hidden; '>{$row['contents']}</div>
 				EOM;
 			}
 		}
