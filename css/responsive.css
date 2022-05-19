@@ -178,6 +178,8 @@
     }
     #top #top_left_square{
         height: 0;
+        display: flex !important;
+        z-index: 9999 !important;
     }
     #top #top_left_square div{
         width: 32%;
@@ -186,7 +188,7 @@
         padding: 5px 0;
         border-radius: 5px;
         transform: translateY(20px);
-        z-index: 999;
+        z-index: 9999 !important;
     }
     #top #top_left_square div:nth-child(1){
         margin-left: 3%;
@@ -198,6 +200,7 @@
         background-position: center top;
         height: 100vw;
         position: relative;
+        z-index: -1 !important;
     }
     #top #top_left_circle img{
         position: absolute;
@@ -282,19 +285,23 @@
         min-width: 0;
         margin-top: 0.5rem;
     }
-    #worries > div:nth-child(2),
-    #worries > div:nth-child(2) > div,
-    #worries > div:nth-child(2) div{
-        z-index: 999 !important;
+    #worries > div:nth-child(2)
+    {
+        position: relative;
+        margin-bottom: calc(90vw);
     }
-    #worries > div:nth-child(3){
+    #worries #nayami_sp{
         background-repeat: no-repeat;
         background-image: url('../img/nayami.jpg');
         background-size: 100%;
         background-position: center top;
         height: 110vw; 
+        width: 100%;
         /* transform: translateY(-100px); */
-        z-index: 0 !important;
+        z-index: -1 !important;
+        position: absolute;
+        top: 200px;
+        left: 0;
     }
     #worries_sp{
         line-height: 2.2em;
