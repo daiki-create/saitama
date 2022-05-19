@@ -487,6 +487,17 @@ header #header_right #hamburger{
     padding: 8px;
     margin-bottom: 15px;
 }
+#area table{
+    margin: auto !important;
+    padding-bottom: 20px;
+}
+#area table td{
+    background-color: #cdcdcd;
+    color: #0071a3;
+    text-align: center;
+    width: 100px;
+    margin: 4px !important;
+}
 
 /* 流れ */
 #use{
