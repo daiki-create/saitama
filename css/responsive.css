@@ -21,7 +21,9 @@
     #header_right{
         margin-left: auto;
         margin-right: 0;
-        transform: translateX(0);
+        /* transform: translateX(0); */
+        margin-left: auto !important;
+        margin-right: 20px !important;
     }
    
     #news_parent > div{
@@ -294,6 +296,19 @@
         /* transform: translateY(-100px); */
         z-index: 0 !important;
     }
+    #worries_sp{
+        line-height: 2.2em;
+    }
+    #worries_sp .d_flex{
+        border-bottom: dotted #9a9a9a 2px;
+        width: auto;
+        display: inline-flex;
+    }
+    #worries_sp .worries_second_line span{
+        margin-left: 30px;
+        border-bottom: dotted #9a9a9a 2px;
+        width: auto;
+    }
 
     /* 動画 */
     #movie .d_flex{
@@ -379,6 +394,11 @@
     }
     #voice .voice_contents > .bc_white:nth-child(1) > div:nth-child(1) img{
         height: 35vw;
+    }
+
+    /* エリア */
+    #area table{
+        font-size: 1rem;
     }
 
     /* 流れ */
@@ -505,6 +525,11 @@
     #information > div > div:nth-child(1){
         width: 50px !important;
         height: 50px !important;
+    }
+
+       /* エリア */
+       #area table{
+        font-size: 2px;
     }
 }
 

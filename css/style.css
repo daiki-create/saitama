@@ -139,7 +139,7 @@ header #header_right #hamburger{
 /*========= ボタンのためのCSS ===============*/
 .openbtn1{
   position:relative;
-    z-index: 9999;/*ボタンを最前面に*/
+    z-index: 99999;/*ボタンを最前面に*/
   top:0;
   cursor: pointer;
     width: 80px;
