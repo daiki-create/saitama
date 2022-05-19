@@ -310,7 +310,7 @@ EOM;
 						<dl>
 							<div class='news_contents_left_top'>
 								<dd id="input-date-{$row['id']}" style='font-weight:bold;font-sise:larger;min-width:18%'>{$date}</dd>
-								<dd id="input-title-{$row['id']}" style='font-weight:bold;color:white;background-color:#4169e1;border-radius:10px;padding:1px 20px;max-width:65%'>{$row['title']}</dd>
+								<dd id="input-title-{$row['id']}" style='font-weight:bold;color:white;background-color:#0071a3;border-radius:10px;padding:1px 20px;max-width:65%'>{$row['title']}</dd>
 							</div>
 							<dd class='news_contents_bottom' onclick='show_contents({$row['id']})' id="input-contents-{$row['id']}" style='margin-top:10px;cursor:pointer;
 							display: -webkit-box;

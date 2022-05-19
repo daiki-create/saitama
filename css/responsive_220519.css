@@ -59,7 +59,7 @@
 
 @media screen and (max-width:640px) {
     html{
-        font-size: 6px;
+        font-size: 10px;
     }
 
     /* 640フォントサイズ */
@@ -258,6 +258,9 @@
         text-align: left;
         margin-left: 50px;
         white-space: nowrap;
+    }
+    #reason .fs_26{
+        margin-left: 10vw;
     }
 
     /* 悩み */
