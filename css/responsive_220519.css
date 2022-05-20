@@ -505,6 +505,15 @@
     #faq .faq_contents div:nth-child(2){
         padding-left: 20px;
     }
+    #faq > div:nth-child(3) > div{
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 20px;
+        display: flex;
+    }
+    #faq > div:nth-child(3) > div > img{
+        width: calc(100% / 3);
+    }
 
     /* プライバシーポリシー */
     #privacy_policy > div:nth-child(1) > div > div:nth-child(2){
@@ -528,6 +537,8 @@
     /* 所在地 */
     .c_footer__title {
         width: 80px;
+        margin-left: 0;
+        margin-right: 0;
     }
     
     /* フィックスコントロール */

@@ -299,6 +299,7 @@ header #header_right #hamburger{
 #reason > div:nth-child(1) > div{
     width: 900px;
     margin: auto;
+    padding-bottom: 20px;
 }
 #reason .reason_contents p:nth-child(2),
 #reason .reason_contents p:nth-child(3),
@@ -589,6 +590,15 @@ header #header_right #hamburger{
     line-height: 2em;
     padding: 0 10px;
 }
+#faq > div:nth-child(3) > div{
+    width: 35%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#faq > div:nth-child(3) > div > img{
+    object-fit: contain;
+}
 
 /* プライバシーポリシー */
 #privacy_policy > div:nth-child(1) > div > div:nth-child(2){
@@ -638,6 +648,8 @@ margin-bottom: 10em;
     color: #fff;
     padding: 0.5em;
     width: 100px;
+    margin-left: 30px;
+    margin-right: 50px;
 }
 .c_footer__txt {
     padding: 0 1.5rem;
