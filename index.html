@@ -214,7 +214,7 @@
                         <span class="color_blue fs_108 fs_41_sp">5</span>
                     </div>
                     <p class="fs_35 fs_18_sp">埼玉県内ならどこにでもご訪問可能です。</p>
-                    <p class="color_blue fs_48 fs_28_sp">ご自宅にも介護施設にもご訪問いたします</p>
+                    <p class="color_blue fs_48 fs_28_sp">ご自宅にも介護施設にも<br class="visible_640">ご訪問いたします</p>
                     <div class="visible_640"><img src="img/reason_1.png" alt=""></div>
                 </div>
             </div>  
@@ -803,14 +803,14 @@
             </div> 
 
             <!-- プライバシーポリシー -->
-            <div id="privacy_policy" class="fs_22 fs_16_sp noto_sans_jp_700">
+            <div id="privacy_policy" class="noto_sans_jp_700">
                 <div class="title_blue">
                     <div class="d_flex mw_960 color_blue">
-                        <div class="fs_24_sp">プライバシーポリシー</div>
-                        <div class="fs_14_sp">Privacy policy</div>
+                        <div class="fs_30 fs_24_sp">プライバシーポリシー</div>
+                        <div class="fs_26 fs_14_sp">Privacy policy</div>
                     </div>
                 </div>
-                <section class="mw_960">
+                <section class="mw_960 fs_21 fs_18_sp">
                     <h2 class="txt_center hidden_640">プライバシーポリシー</h2>
                     <p>さいたま訪問リハビリセンター（以下「弊社」といいます）が、運営する当サイトにおける個人情報の取扱い、利用規約についてご説明いたします。</p>
                     <h3 class="title-2">1. 個人情報の収集・利用について</h3>
@@ -832,14 +832,14 @@
             </div> 
 
             <!-- お問い合わせフォーム -->
-            <div id="contact" class="fs_30 noto_sans_jp_700">
+            <div id="contact" class="noto_sans_jp_700">
                 <div class="title_blue">
                     <div class="d_flex mw_960 color_blue">
-                        <div class="fs_24_sp">メールフォーム</div>
-                        <div class="fs_14_sp">Mail form</div>
+                        <div class="fs_30 fs_24_sp">メールフォーム</div>
+                        <div class="fs_28 fs_14_sp">Mail form</div>
                     </div>
                 </div>
-                <div class="mw_960">
+                <div class="mw_960 fs_30">
                     <form action="mail/php/mailform.php" method="post" id="mail_form">
                         <dl>
                             <dt class="fs_21_sp">お名前</dt>
@@ -861,8 +861,95 @@
             </div> 
         </main>
 
-        <footer class="bc_blue color_white ta_center">
-            <div class="hidden_640 mw_960">
+         <!-- 所在地 -->
+         <div id="company" class="fs_30 fs_16_sp noto_sans_jp_700">
+            <div class="title_blue">
+                <div class="d_flex mw_960 color_blue">
+                    <div class="fs_24_sp">所在地</div>
+                    <div class="fs_14_sp"></div>
+                </div>
+            </div>
+            <div class="mw_960 fs_18_sp">
+                <dl class="c_footer__list">
+                    <dt class="c_footer__title ta_center">名前</dt>
+                    <dd class="c_footer__txt">相模原訪問リハビリセンター</dd>
+                </dl>
+                <dl class="c_footer__list">
+                    <dt class="c_footer__title ta_center">電話番号</dt>
+                    <dd class="c_footer__txt">042-816-2874</dd>
+                </dl>
+                <dl class="c_footer__list">
+                    <dt class="c_footer__title ta_center">住所</dt>
+                    <dd class="c_footer__txt">
+                        〒252-0303 <br>
+                        神奈川県相模原市南区相模大野<br>
+                        6-23-15-1008
+                    </dd>
+                </dl>
+                <dl class="c_footer__list">
+                    <dt class="c_footer__title ta_center">営業時間</dt>
+                    <dd class="c_footer__txt">
+                        月〜土(電話受け付け年中無休)<br>
+                        9:00〜20:00
+                    </dd>
+                </dl>
+            </div>
+        </div> 
+
+
+        <!-- グループ企業 -->
+        <div id="group">
+            <div class="group_top hidden_960 noto_sans_jp_700">
+                <div class="group_line"></div>
+                <div class="group_title color_blue">
+                    <div class="fs_26">グループ企業</div>
+                </div>
+            </div>
+            <div class="group_top_960 visible_960">
+                <div class="group_line"></div>
+                <div class="group_title color_blue">
+                    <div class="fs_26">グループ企業</div>
+                </div>
+            </div>
+            <div class="mw_960">
+                <div class="group_contents fs_26 fs_22_sp">
+                    <ul>
+                        <li>
+                            <a href="https://gunma-rehabili.com/" target="_blank">
+                                <div class="d_flex">
+                                    <div class="color_blue">></div>
+                                    <div class="group_name">ぐんま訪問リハビリセンター</div>
+                                    <div><img src="img/group_link.png" alt=""></div>
+                                </div>   
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://saitama-rehabili.com/" target="_blank">
+                                <div class="d_flex">
+                                    <div class="color_blue">></div>
+                                    <div class="group_name">さいたま訪問リハビリセンター</div>
+                                    <div><img src="img/group_link.png" alt=""></div>
+                                </div>   
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="https://kisarazu-rehabili.com/" target="_blank">
+                                <div class="d_flex">
+                                    <div class="color_blue">></div>
+                                    <div class="group_name">ちば訪問リハビリセンター　</div>
+                                    <div><img src="img/group_link.png" alt=""></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer class="ta_center bc_blue">
+            <div class="hidden_640 mw_960 color_white">
                 <p class="fs_14">Copyright © さいたま訪問リハビリセンター Inc. All Rights Reserved.</p>
             </div>
             <!-- フィックスコントロール -->
