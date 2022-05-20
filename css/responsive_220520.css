@@ -476,7 +476,7 @@
 
     /* エリア */
     #area table{
-        font-size: 1.8rem;
+        font-size: 1.8rem !important;
     }
 
     /* 流れ */
