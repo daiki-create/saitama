@@ -37,7 +37,7 @@
         white-space: nowrap;
     }
     #reason > .reason_contents > div:nth-child(1){
-        width: 80px;
+        width: 120px;
     }
 }
 
@@ -245,6 +245,9 @@
         width: auto;
         text-align: center;
         padding-bottom: 15px;
+    }
+    #reason > .reason_contents > div:nth-child(1){
+        width: 80px;
     }
     #reason > div:nth-child(1) > div span:nth-child(3),
     #reason > div:nth-child(1) > div span:nth-child(4),

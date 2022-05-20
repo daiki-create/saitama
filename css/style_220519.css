@@ -321,37 +321,51 @@ header #header_right #hamburger{
     padding: 20px 0 40px 0;
 }
 #reason > .reason_contents:nth-child(4) > p:nth-child(3){
+    padding: 20px 0 0 0;
+}
+#reason > .reason_contents:nth-child(4) > p:nth-child(3){
     padding: 0;
 }
 #reason > .reason_contents:nth-child(2){
     background-image: url('../img/reason_1.png');
     background-size: 30%;
     background-position: left top;  
-    background-color: rgb(235, 244, 243);
+    /* background-color: rgb(235, 244, 243); */
 }
 #reason > .reason_contents:nth-child(3){
     background-image: url('../img/reason_2.png');
     background-size: 30%;
     background-position: right top;  
-    background-color: rgb(227, 239, 237);
+    /* background-color: rgb(227, 239, 237); */
 }
 #reason > .reason_contents:nth-child(4){
     background-image: url('../img/reason_3.png');
     background-size: 30%;
     background-position: left top;  
-    background-color: rgb(235, 244, 243);
+    /* background-color: rgb(235, 244, 243); */
 }
 #reason > .reason_contents:nth-child(5){
     background-image: url('../img/reason_4.png');
     background-size: 30%;
     background-position: right top;  
-    background-color: rgb(227, 239, 237);
+    /* background-color: rgb(227, 239, 237); */
 }
 #reason > .reason_contents:nth-child(6){
     background-image: url('../img/reason_1.png');
     background-size: 30%;
     background-position: left top;  
-    background-color: rgb(235, 244, 243);
+    /* background-color: rgb(235, 244, 243); */
+}
+@media screen and (max-width:1250px) {
+    #reason > .reason_contents:nth-child(2),
+    #reason > .reason_contents:nth-child(3),
+    #reason > .reason_contents:nth-child(5),
+    #reason > .reason_contents:nth-child(6){
+        background-size: 40%;
+    }
+    #reason > .reason_contents:nth-child(4){
+        background-size: 40%;
+    }
 }
 #reason .fs_26{
     padding-top: 10px;

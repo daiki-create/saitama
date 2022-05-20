@@ -116,7 +116,8 @@
     font-family: 'Noto Sans JP', sans-serif !important;
     font-weight: 900;
 }
-.sawarabi_mincho{
-    font-family: 'Sawarabi Mincho', serif;    
-    font-weight: 700;
+.mincho{
+    /* font-family: 'Sawarabi Mincho', serif;     */
+    font-family: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN";
+    font-weight: 900;
 }
