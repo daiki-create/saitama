@@ -516,8 +516,11 @@
         width: 96%;
     }
     #doctor .doctor_contents > div:nth-child(1) img{
-        width: 100px;
-        height: 120px;
+        width: 120px;
+        height: 150px;
+    }
+    #doctor .doctor_contents .color_blue{
+        bottom: 10px;
     }
 
     /* よくある質問 */
