@@ -1,3 +1,25 @@
+<?php
+$rss = simplexml_load_file('https://saitama-rehabili.com/blog/feed/');
+
+$news_list = array();
+$news_cnt = 0;
+foreach($rss->channel->item as $item){
+    $news_list[] = array(
+        'title'   => $item->title, //記事タイトル
+        'date'    => date("Y/m/d", strtotime($item->pubDate)), //日付
+        'link'    => $item->link, //リンク,
+        'description'=> $item->description, //ディスクリプション
+        'url'   => $item->url
+    );
+    $news_cnt++;
+    
+    if ($news_cnt==3) {
+        break;
+    }
+}
+// var_dump($news_list);
+?>
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -22,7 +44,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Kameron&family=M+PLUS+Rounded+1c:wght@500;700;800;900&family=Noto+Sans+JP:wght@500;700;900&family=Sawarabi+Mincho&display=swap" rel="stylesheet">        <header class="bc_light_blue">
-            <div class="mw_960">
+            <div class="header_width">
                 <div id="header_left" class="d_flex m_plus_rounded_700">
                     <div class="color_blue">
                         <p class="fs_22 fs_18_sp">【さいたま県全域に対応】<br class="visible_640">脳梗塞や脳出血後遺症に<br class="visible_640">強い訪問リハビリ・マッサージ</p>
@@ -130,6 +152,28 @@
                     </div>  
                 </div>
             </div>
+
+            <script>
+                // window.onload = function(){
+                //     var contents_sp = document.getElementById('input-contents-sp-10');
+                //     console.log(contents_sp);
+
+                // }
+                function show_contents(id){
+                    console.log(id);
+                    var contents = document.getElementById('input-contents-'+id);
+                    var detail = document.getElementById('news-contents-detail-'+id);
+                    var contents_sp = document.getElementById('input-contents-sp-'+id);
+                    var detail_sp = document.getElementById('news-contents-detail-sp-'+id);
+                    contents.style.display = 'block';
+                    contents.style.WebkitLineClamp = '1000';
+                    contents_sp.style.display = 'block';
+                    contents_sp.style.WebkitLineClamp = '1000';
+
+                    detail.style.display = 'none';
+                    detail_sp.style.display = 'none';
+                }
+            </script>
             
             <!-- お任せください -->
             <div id="entrust" class="mincho">

@@ -301,7 +301,7 @@ EOM;
 				$date = date('Y年m月d日',  strtotime($row['date']));
 				echo <<<EOM
 
-				<div{$data_order} style='display:flex;align-items:center;border-top:none;'>
+				<div{$data_order} style='display:flex;align-items:center;border-top:none;margin-top:10px'>
 					{$image_html}
 					<div id="left-{$row['id']}" class="news_contents_img" style='width:20%;height:180px;margin:20px'>
 						<div id="input-img-{$row['id']}"><img src="contents-maker/thumbnail/{$row['img']}" style="width:100%;height:100%; object-fit:cover"></div>
@@ -309,22 +309,23 @@ EOM;
 					<div id="center-{$row['id']}" style='width:80%'>
 						<dl>
 							<div class='news_contents_left_top'>
-								<dd id="input-date-{$row['id']}" style='font-weight:bold;font-sise:larger;min-width:18%'>{$date}</dd>
-								<dd id="input-title-{$row['id']}" style='font-weight:bold;color:white;background-color:#0071a3;border-radius:10px;padding:1px 20px;max-width:65%'>{$row['title']}</dd>
+								<dd id="input-date-{$row['id']}" style='font-weight:bold;;min-width:18%'>{$date}</dd>
+								<dd id="input-title-{$row['id']}">{$row['title']}</dd>
 							</div>
-							<dd class='news_contents_bottom' onclick='show_contents({$row['id']})' id="input-contents-{$row['id']}" style='margin-top:10px;cursor:pointer;
+							<dd class='news_contents_bottom' id="input-contents-{$row['id']}" style='margin-top:10px;
 							display: -webkit-box;
 							-webkit-line-clamp: 4;
 							-webkit-box-orient: vertical;
 							overflow: hidden; '>{$row['contents']}</dd>
+							<dd id='news-contents-detail-{$row['id']}' class='news_contents_detail' onclick='show_contents({$row['id']})' style='cursor:pointer;color:blue;text-aligh:right;'>詳しく見る</dd>
 						</dl>
 					</div>
 				</div>
-				<div class='news_contents_bottom_sp' onclick='show_contents({$row['id']})' id="input-contents-{$row['id']}" style='margin-top:10px;cursor:pointer;
-							display: -webkit-box;
+				<dd class='news_contents_bottom_sp' id="input-contents-sp-{$row['id']}" style='margin-top:10px;
 							-webkit-line-clamp: 4;
 							-webkit-box-orient: vertical;
-							overflow: hidden; '>{$row['contents']}</div>
+							overflow: hidden; '>{$row['contents']}</dd>
+							<div id='news-contents-detail-sp-{$row['id']}' class='news_contents_detail_sp' onclick='show_contents({$row['id']})' style='cursor:pointer;color:blue;text-align:right;'>詳しく見る</div>
 				EOM;
 			}
 		}

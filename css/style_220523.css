@@ -52,6 +52,10 @@ img{
 }
 
 /* ヘッダー */
+.header_width{
+    max-width: 1060px;
+    margin: auto;
+}
 header #header_left{
     padding: 0 10px;
 }
@@ -62,7 +66,7 @@ header #header_left #header_logo{
 }
 header #header_center{
     padding: 15px;
-    margin-left: 10px;
+    margin-left: 100px;
 }
 header #header_center > div{
     border-radius: 10px;
@@ -75,6 +79,16 @@ header #header_right{
 header #header_right #hamburger{
     width: 80px;
     cursor: pointer;
+}
+@media screen and (max-width:1030px) {
+    header #header_center{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width:980px) {
+    header #header_center{
+        margin-left: 10px;
+    }
 }
 
 /* ハンバーガー */
