@@ -15,8 +15,14 @@
     max-width:65%;
     font-size: 12px !important;
 }
+.news_contents_bottom{
+    line-height: 4.5rem;
+}
 .news_contents_bottom_sp{
     display: none !important;
+}
+.news_contents_detail{
+    display: none;
 }
 .news_contents_detail_sp{
     display: none;
@@ -38,14 +44,10 @@
         display: none !important;
     }
     .news_contents_bottom_sp{
-        display: -webkit-box !important;
+        /* display: -webkit-box !important; */
+        display: block !important;
         font-size: 1.4rem !important;
-    }
-    .news_contents_detail_sp{
-        display: block;
-    }
-    .news_contents_detail{
-        display: none !important;
+        line-height: 2rem;
     }
     .fs_36_sp{
         font-size: 3.6rem !important;

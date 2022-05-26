@@ -244,15 +244,69 @@ EOM;
 		$stmt = $this->pdo->prepare( "SELECT * FROM cm_post5 ORDER BY id DESC" );
 		$stmt->execute();
 		
-		
+		// ブログの取得
+		$rss = simplexml_load_file('https://saitama-rehabili.com/feed/');
+		$news_list = array();
+		$news_cnt = 0;
+		foreach($rss->channel->item as $item){
+			$news_list[] = array(
+				'title'   => $item->title, //記事タイトル
+				'date'    => date("Y/m/d", strtotime($item->pubDate)), //日付
+				'guid'    => $item->guid, //リンク,
+				'description'=> $item->description, //ディスクリプション
+				'url'   => $item->url
+			);
+			$news_cnt++;
+			
+			if ($news_cnt==3) {
+				break;
+			}
+		}
+		// ！ブログの取得
+
 		echo <<<EOM
 
 
 <div id="information" style="word-break: break-all;">
 EOM;
-		
-		
+		$news_blog_array = [];
+
 		while ( $row = $stmt->fetch() ) {
+			$element = [
+				'id' => $row['id'],
+				'date' => $row['date'],
+				'title' => $row['title'],
+				'contents' => $row['contents'],
+				'img' => 'contents-maker/thumbnail/'.$row['img'],
+				'display' => $row['display'],
+				'type' => 'news',
+				'guid' => 'javascript:void(0)'
+			];
+			array_push($news_blog_array, $element);
+		}
+
+		foreach($news_list as $row) {
+			if($row['url'] == ''){
+				$row['url'] = 'contents-maker/thumbnail/no-image.png';
+			}
+			$element = [
+				'id' => 0,
+				'date' => $row['date'],
+				'title' => $row['title'],
+				'contents' => $row['description'],
+				'img' => $row['url'],
+				'display' => 1,
+				'type' => 'blog',
+				'guid' => $row['guid']
+			];
+
+			array_push($news_blog_array, $element);
+		}
+		
+		array_multisort( array_map( "strtotime", array_column( $news_blog_array, "date" ) ), SORT_DESC, $news_blog_array ) ;
+
+		// while ( $row = $stmt->fetch() ) {
+		foreach($news_blog_array as $row) {
 			
 			$time_difference = 0;
 			$span_delete     = '';
@@ -304,7 +358,7 @@ EOM;
 				<div{$data_order} style='display:flex;align-items:center;border-top:none;margin-top:10px'>
 					{$image_html}
 					<div id="left-{$row['id']}" class="news_contents_img" style='width:20%;height:180px;margin:20px'>
-						<div id="input-img-{$row['id']}"><img src="contents-maker/thumbnail/{$row['img']}" style="width:100%;height:100%; object-fit:cover"></div>
+						<div id="input-img-{$row['id']}"><img src="{$row['img']}" style="width:100%;height:100%; object-fit:cover"></div>
 					</div>
 					<div id="center-{$row['id']}" style='width:80%'>
 						<dl>
@@ -312,24 +366,25 @@ EOM;
 								<dd id="input-date-{$row['id']}" style='font-weight:bold;;min-width:18%'>{$date}</dd>
 								<dd id="input-title-{$row['id']}">{$row['title']}</dd>
 							</div>
-							<dd class='news_contents_bottom' id="input-contents-{$row['id']}" style='margin-top:10px;
-							display: -webkit-box;
-							-webkit-line-clamp: 4;
-							-webkit-box-orient: vertical;
-							overflow: hidden; '>{$row['contents']}</dd>
-							<dd id='news-contents-detail-{$row['id']}' class='news_contents_detail' onclick='show_contents({$row['id']})' style='cursor:pointer;color:blue;text-aligh:right;'>詳しく見る</dd>
+							<dd data-type='{$row['type']}' class='news_contents_bottom' id="input-contents-{$row['id']}" style='margin-top:10px;'>{$row['contents']}</dd>
+							<dd id='news-contents-detail-{$row['id']}' class='news_contents_detail' onclick='show_contents({$row['id']})' style='cursor:pointer;color:blue;text-align:right;'>
+							<a href='{$row['guid']}'>
+							詳しく見る
+							</a>
+							</dd>
 						</dl>
 					</div>
 				</div>
-				<dd class='news_contents_bottom_sp' id="input-contents-sp-{$row['id']}" style='margin-top:10px;
-							-webkit-line-clamp: 4;
-							-webkit-box-orient: vertical;
-							overflow: hidden; '>{$row['contents']}</dd>
-							<div id='news-contents-detail-sp-{$row['id']}' class='news_contents_detail_sp' onclick='show_contents({$row['id']})' style='cursor:pointer;color:blue;text-align:right;'>詳しく見る</div>
+
+				<dd data-type='{$row['type']}' class='news_contents_bottom_sp' id="input-contents-sp-{$row['id']}" style='margin-top:10px;'>{$row['contents']}</dd>
+							<div id='news-contents-detail-sp-{$row['id']}' class='news_contents_detail_sp' onclick='show_contents({$row['id']})' style='cursor:pointer;color:blue;text-align:right;'>
+							<a href='{$row['guid']}'>
+							詳しく見る
+							</a>
+							</div>
 				EOM;
 			}
 		}
-		
 		
 		echo <<<EOM
 
