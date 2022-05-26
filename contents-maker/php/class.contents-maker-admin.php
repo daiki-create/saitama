@@ -55,7 +55,7 @@ class Contents_Maker_Admin Extends Contents_Maker {
 <link rel="stylesheet" href="../css/reset.css" />
 <link rel="stylesheet" href="../css/style.css" />
 <link rel="stylesheet" href="../css/admin.css" />
-<link rel="stylesheet" href="../css/my_style.css" />
+<link rel="stylesheet" href="../css/my_style_220527.css" />
 <link rel="stylesheet" href="../css/jquery.datetimepicker.css" />{$attach_css}{$reserve_css}{$sort_css}{$edit_css}
 </head>
 <body>

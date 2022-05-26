@@ -126,7 +126,7 @@
             <!-- 新着情報 -->
             <div id="news_parent" class="bc_light_gray">
                 <div class="bc_white mw_960">
-                    <link rel="stylesheet" href="contents-maker/css/my_style.css">
+                    <link rel="stylesheet" href="contents-maker/css/my_style_220527.css">
                     <p class="fs_42 fs_36_sp color_blue">What’s New</p>
                     <div id="news">
                         
