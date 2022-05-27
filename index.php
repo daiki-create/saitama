@@ -1071,7 +1071,7 @@
     
     <!-- 新着情報 -->
     <script src="//unpkg.com/vue"></script>
-    <script src="contents-maker/js/contents-maker.js" id="contents-maker-js" async></script>
+    <script src="contents-maker/js/contents-maker_220527.js" id="contents-maker-js" async></script>
 
     <!-- 続きを読む　表示・非表示 -->
     <script>
