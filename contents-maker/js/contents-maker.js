@@ -10,11 +10,8 @@ function contents_maker() {
 	xhr.onreadystatechange = function() {
 		if ( xhr.readyState === 4 && xhr.status === 200 ) {
 			news.innerHTML = xhr.responseText;
-		} else {
-			news.innerHTML = '新着情報取得中...'
-		}
 
-		var ww = $('body').width();
+            var ww = $('body').width();
             var lineNum = 2;
 
             // PC
@@ -86,6 +83,9 @@ function contents_maker() {
                     }
                 }
             }
+		} else {
+			news.innerHTML = '新着情報取得中...'
+		}
 	}
 	
 	xhr.send( null );
