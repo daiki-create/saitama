@@ -1028,10 +1028,6 @@
         </footer>
     </body>
 
-    <!-- 新着情報 -->
-    <script src="//unpkg.com/vue"></script>
-    <script src="contents-maker/js/contents-maker.js" id="contents-maker-js" async></script>
-
     <!-- mail form -->
     <script src="mail/js/mailform-js.php"></script>
     <script src="mail/js/jquery.autoKana.js"></script>
@@ -1068,84 +1064,90 @@
     </script>
 
     <!-- preload -->
-    <script>
+    <!-- <script>
     $('link[as = "style"]').attr('rel','stylesheet');
-    </script>
+    </script> -->
+
+    
+    <!-- 新着情報 -->
+    <script src="//unpkg.com/vue"></script>
+    <script src="contents-maker/js/contents-maker.js" id="contents-maker-js" async></script>
 
     <!-- 続きを読む　表示・非表示 -->
     <script>
-        $(window).on('load', function() {
+        // $(window).on('load', function() {
+            // var ww = $('body').width();
+            // var lineNum = 2;
 
-            var ww = $('body').width();
-            var lineNum = 2;
+            // // PC
+            // if (ww >= 640) {
+            //     var cnt = $(".news_contents_bottom").length;
+            //     console.log(cnt);
 
-            // PC
-            if (ww >= 640) {
-                var cnt = $(".news_contents_bottom").length;
-                var news_contents_bottom_array = [];
-                $(".news_contents_bottom").each(function(i, elem) {
-                    news_contents_bottom_array.push(elem);
-                });
-                var news_contents_detail_array = [];
-                $(".news_contents_detail").each(function(i, elem) {
-                    news_contents_detail_array.push(elem);
-                });
-                for(var i=0; i<cnt; i++)
-                {
-                    var textHeight = $(news_contents_bottom_array[i]).height();
-                    var lineHeight = parseFloat($(news_contents_bottom_array[i]).css('line-height'));
+            //     var news_contents_bottom_array = [];
+            //     $(".news_contents_bottom").each(function(i, elem) {
+            //         news_contents_bottom_array.push(elem);
+            //     });
+            //     var news_contents_detail_array = [];
+            //     $(".news_contents_detail").each(function(i, elem) {
+            //         news_contents_detail_array.push(elem);
+            //     });
+            //     for(var i=0; i<cnt; i++)
+            //     {
+            //         var textHeight = $(news_contents_bottom_array[i]).height();
+            //         var lineHeight = parseFloat($(news_contents_bottom_array[i]).css('line-height'));
 
-                    if(textHeight > lineHeight*lineNum)
-                    {
-                        $(news_contents_bottom_array[i]).css({
-                            'cssText': 'display:-webkit-box !important; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;'
-                        });
-                        if($(news_contents_bottom_array[i]).data('type') == 'news')
-                        {
-                            $(news_contents_detail_array[i]).show();
-                        }
-                    }
-                    if($(news_contents_bottom_array[i]).data('type') == 'blog')
-                    {
-                        $(news_contents_detail_array[i]).show();
-                    }
-                }
-            }
+            //         if(textHeight > lineHeight*lineNum)
+            //         {
+            //             $(news_contents_bottom_array[i]).css({
+            //                 'cssText': 'display:-webkit-box !important; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;'
+            //             });
+            //             if($(news_contents_bottom_array[i]).data('type') == 'news')
+            //             {
+            //                 $(news_contents_detail_array[i]).show();
+            //             }
+            //         }
+            //         if($(news_contents_bottom_array[i]).data('type') == 'blog')
+            //         {
+            //             $(news_contents_detail_array[i]).show();
+            //         }
+            //     }
+            // }
 
-            // SP
-            if (ww < 640) {
-                var cnt_sp = $(".news_contents_bottom_sp").length;
-                var news_contents_bottom_sp_array = [];
-                $(".news_contents_bottom_sp").each(function(i, elem) {
-                    news_contents_bottom_sp_array.push(elem);
-                });
+            // // SP
+            // if (ww < 640) {
+            //     var cnt_sp = $(".news_contents_bottom_sp").length;
+            //     var news_contents_bottom_sp_array = [];
+            //     $(".news_contents_bottom_sp").each(function(i, elem) {
+            //         news_contents_bottom_sp_array.push(elem);
+            //     });
 
-                var news_contents_detail_sp_array = [];
-                $(".news_contents_detail_sp").each(function(i, elem) {
-                    news_contents_detail_sp_array.push(elem);
-                });
+            //     var news_contents_detail_sp_array = [];
+            //     $(".news_contents_detail_sp").each(function(i, elem) {
+            //         news_contents_detail_sp_array.push(elem);
+            //     });
 
-                for(var i=0; i<cnt_sp; i++)
-                {
-                    var textHeight = $(news_contents_bottom_sp_array[i]).height();
-                    var lineHeight = parseFloat($(news_contents_bottom_sp_array[i]).css('line-height'));
+            //     for(var i=0; i<cnt_sp; i++)
+            //     {
+            //         var textHeight = $(news_contents_bottom_sp_array[i]).height();
+            //         var lineHeight = parseFloat($(news_contents_bottom_sp_array[i]).css('line-height'));
 
-                    if(textHeight > lineHeight*lineNum)
-                    {
-                        $(news_contents_bottom_sp_array[i]).css({
-                            'cssText': 'display:-webkit-box !important; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;'
-                        });
-                        if($(news_contents_bottom_sp_array[i]).data('type') == 'news')
-                        {
-                            $(news_contents_detail_sp_array[i]).show();
-                        }
-                    }
-                    if($(news_contents_bottom_sp_array[i]).data('type') == 'blog')
-                    {
-                        $(news_contents_detail_sp_array[i]).show();
-                    }
-                }
-            }
-        });
+            //         if(textHeight > lineHeight*lineNum)
+            //         {
+            //             $(news_contents_bottom_sp_array[i]).css({
+            //                 'cssText': 'display:-webkit-box !important; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;'
+            //             });
+            //             if($(news_contents_bottom_sp_array[i]).data('type') == 'news')
+            //             {
+            //                 $(news_contents_detail_sp_array[i]).show();
+            //             }
+            //         }
+            //         if($(news_contents_bottom_sp_array[i]).data('type') == 'blog')
+            //         {
+            //             $(news_contents_detail_sp_array[i]).show();
+            //         }
+            //     }
+            // }
+        // });
     </script>
 </html>
