@@ -25,11 +25,11 @@ body {
     <?php
     if($_SERVER['HTTP_HOST']=="noland.sakura.ne.jp")
     {
-      echo('<a href="noland.sakura.ne.jp/saitama">戻る</a>');
+      echo('<a href="http://noland.sakura.ne.jp/saitama">戻る</a>');
     }
     elseif($_SERVER['HTTP_HOST']=="saitama-rehabili.com")
     {
-      echo('<a href="saitama-rehabili.com">戻る</a>');
+      echo('<a href="https://saitama-rehabili.com">戻る</a>');
     }
     else{
       echo('<a href="http://localhost/saitama-rehabili.com/">戻る</a>');
