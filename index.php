@@ -408,7 +408,7 @@ foreach($rss->channel->item as $item){
                     <span class="fs_41 fs_17_sp">たくさんの</span>
                     <span class="fs_92 fs_39_sp">お客さまの声</span>
                     <p class="fs_53 fs_18_sp">お喜びの声、続々ちょうだいしてます</p>
-                    <div class=""><img src="img/voice_title_bottom.png" alt=""></div>
+                    <div class="mw_960"><img src="img/voice_title_bottom.png" alt=""></div>
                 </div>
                 <div class="d_flex mw_960">
                     <div class="voice_contents">

@@ -476,6 +476,9 @@ header #header_right #hamburger{
 #voice{
     padding: 10px 0 20px 0;
 }
+#voice > div:nth-child(1) > div:nth-child(5){
+    padding: 20px;
+}
 #voice .mincho{
     font-weight: 900 !important;
 }

@@ -357,22 +357,22 @@ EOM;
 			if($row['display'])
 			{
 				$date = date('Y年m月d日',  strtotime($row['date']));
-				echo <<<EOM
+				echo "
 
-				<div{$data_order} style='display:flex;align-items:center;border-top:none;margin-top:10px'>
+				<div{$data_order} style=\"display:flex;align-items:center;border-top:none;margin-top:10px\">
 					{$image_html}
-					<div id="left-{$row['id']}" class="news_contents_img" style='width:20%;height:180px;margin:20px'>
-						<div id="input-img-{$row['id']}"><img src="{$row['img']}" style="width:100%;height:100%; object-fit:cover"></div>
+					<div id=\"left-{$row['id']}\" class=\"news_contents_img\" style=\"width:20%;height:180px;margin:20px\">
+						<div id=\"input-img-{$row['id']}\"><img src=\"{$row['img']}\" style=\"width:100%;height:100%; object-fit:cover\"></div>
 					</div>
-					<div id="center-{$row['id']}" style='width:80%'>
+					<div id=\"center-{$row['id']}\" style=\"width:80%\">
 						<dl>
-							<div class='news_contents_left_top'>
-								<dd id="input-date-{$row['id']}" style='font-weight:bold;;min-width:18%'>{$date}</dd>
-								<dd id="input-title-{$row['id']}">{$row['title']}</dd>
+							<div class=\"news_contents_left_top\">
+								<dd id=\"input-date-{$row['id']}\" style=\"font-weight:bold;;min-width:18%\">{$date}</dd>
+								<dd id=\"input-title-{$row['id']}\">{$row['title']}</dd>
 							</div>
-							<dd data-type='{$row['type']}' class='news_contents_bottom' id="input-contents-{$row['id']}" style='margin-top:10px;'>{$row['contents']}</dd>
-							<dd id='news-contents-detail-{$row['id']}' class='news_contents_detail' onclick='show_contents({$row['id']})' style='cursor:pointer;color:blue;text-align:right;'>
-							<a href='{$row['guid']}'>
+							<dd data-type=\"{$row['type']}\" class=\"news_contents_bottom\" id=\"input-contents-{$row['id']}\" style=\"margin-top:10px;\">{$row['contents']}</dd>
+							<dd id=\"news-contents-detail-{$row['id']}\" class=\"news_contents_detail\" onclick=\"show_contents({$row['id']})\" style=\"cursor:pointer;color:blue;text-align:right;\">
+							<a href=\"{$row['guid']}\">
 							詳しく見る
 							</a>
 							</dd>
@@ -380,21 +380,17 @@ EOM;
 					</div>
 				</div>
 
-				<dd data-type='{$row['type']}' class='news_contents_bottom_sp' id="input-contents-sp-{$row['id']}" style='margin-top:10px;'>{$row['contents']}</dd>
-							<div id='news-contents-detail-sp-{$row['id']}' class='news_contents_detail_sp' onclick='show_contents({$row['id']})' style='cursor:pointer;color:blue;text-align:right;'>
-							<a href='{$row['guid']}'>
-							詳しく見る
-							</a>
-							</div>
-				EOM;
+				<dd data-type=\"{$row['type']}\" class=\"news_contents_bottom_sp\" id=\"input-contents-sp-{$row['id']}\" style=\"margin-top:10px;\">{$row['contents']}</dd>
+				<div id=\"news-contents-detail-sp-{$row['id']}\" class=\"news_contents_detail_sp\" onclick=\"show_contents({$row['id']})\" style=\"cursor:pointer;color:blue;text-align:right;\">
+					<a href=\"{$row['guid']}\">
+						詳しく見る
+					</a>
+				</div>
+				";
 			}
 		}
 		
-		echo <<<EOM
-
-</div>
-EOM;
-		
+		echo "</div>";
 	}
 	
 }
