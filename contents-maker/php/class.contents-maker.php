@@ -306,8 +306,12 @@ EOM;
 		array_multisort( array_map( "strtotime", array_column( $news_blog_array, "date" ) ), SORT_DESC, $news_blog_array ) ;
 
 		// while ( $row = $stmt->fetch() ) {
+		$j = 0;
 		foreach($news_blog_array as $row) {
-			
+			$j++;
+			if($j == 3){
+				break;
+			}
 			$time_difference = 0;
 			$span_delete     = '';
 			$span_edit       = '';
