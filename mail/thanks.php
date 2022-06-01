@@ -12,7 +12,7 @@ body {
 	background: #f0f0f0;
 }
 </style>
-<link rel="stylesheet" href="css/thanks.css" />
+<link rel="stylesheet" href="css/thanks_220601.css" />
 </head>
 <body>
 
