@@ -294,6 +294,9 @@ header #header_right #hamburger{
 #information > div dd{
     font-size: 3rem;
 }
+#news{
+    padding-right: 10px;
+}
 
 /* お任せ */
 #entrust .entrust_contents .d_flex > div:nth-child(1){

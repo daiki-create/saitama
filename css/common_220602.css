@@ -16,6 +16,9 @@
 .ta_center{
     text-align: center;
 }
+.td_none{
+    text-decoration: none;
+}
 
 /* color */
 .color_blue{color: #0071a3;}

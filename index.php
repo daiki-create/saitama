@@ -24,8 +24,8 @@ foreach($rss->channel->item as $item){
         <link rel="preload" as="style" href="mail/css/jquery.datetimepicker.css" onload="this.rel='stylesheet'">
 
         <!-- my style -->
-        <link rel="stylesheet" href="css/common.css">
-        <link rel="stylesheet" href="css/style_220523.css">
+        <link rel="stylesheet" href="css/common_220602.css">
+        <link rel="stylesheet" href="css/style_220602.css">
         <link rel="stylesheet" href="css/responsive_22052001.css">
 
         <!-- jquery -->
@@ -42,13 +42,15 @@ foreach($rss->channel->item as $item){
                 <div id="header_left" class="d_flex m_plus_rounded_700">
                     <div class="color_blue">
                         <p class="fs_22 fs_18_sp">【さいたま県全域に対応】<br class="visible_640">脳梗塞や脳出血後遺症に<br class="visible_640">強い訪問リハビリ・マッサージ</p>
-                        <div class="d_flex hidden_640_flex">
-                            <div id="header_logo"><a href="https://saitama-rehabili.com"><img src="img/logo.png" alt=""></a></div>
-                            <div class="ta_center">
-                                <p class="fs_45">さいたま訪問リハビリセンター</p>
-                                <p class="fs_28">Saitama rehabilitation center</p>
+                        <a class="td_none color_blue" href="https://saitama-rehabili.com">
+                            <div class="d_flex hidden_640_flex">
+                                <div id="header_logo"><img src="img/logo.png" alt=""></div>
+                                <div class="ta_center">
+                                    <p class="fs_45">さいたま訪問リハビリセンター</p>
+                                    <p class="fs_28">Saitama rehabilitation center</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div id="header_center" class="bc_blue hidden_960 m_plus_rounded_700">
                         <p class="color_white fs_67">0120-187-497</p>
@@ -73,15 +75,17 @@ foreach($rss->channel->item as $item){
                         </div>
                     </nav>
                 </div>
-                <div id="header_title_sp" class="visible_640 color_blue">
-                    <div class="d_flex">
-                        <div id="header_logo_sp"><a href="https://saitama-rehabili.com"><img src="img/logo.png" alt=""></a></div>
-                        <div class="ta_center">
-                            <p class="fs_45 fs_23_sp">さいたま訪問リハビリセンター</p>
+                <a class="td_none color_blue" href="https://saitama-rehabili.com">
+                    <div id="header_title_sp" class="visible_640 color_blue">
+                        <div class="d_flex">
+                            <div id="header_logo_sp"><img src="img/logo.png" alt=""></div>
+                            <div class="ta_center">
+                                <p class="fs_45 fs_23_sp">さいたま訪問リハビリセンター</p>
+                            </div>
                         </div>
+                        <p class="fs_17_sp ta_center">Saitama rehabilitation center</p>
                     </div>
-                    <p class="fs_17_sp ta_center">Saitama rehabilitation center</p>
-                </div>
+                </a>
             </div>
         </header>
 

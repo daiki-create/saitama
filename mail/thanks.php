@@ -25,14 +25,14 @@ body {
     <?php
     if($_SERVER['HTTP_HOST']=="noland.sakura.ne.jp")
     {
-      echo('<a href="http://noland.sakura.ne.jp/saitama">戻る</a>');
+      echo('<a href="http://noland.sakura.ne.jp/saitama">TOPページに戻る</a>');
     }
     elseif($_SERVER['HTTP_HOST']=="saitama-rehabili.com")
     {
-      echo('<a href="https://saitama-rehabili.com">戻る</a>');
+      echo('<a href="https://saitama-rehabili.com">TOPページに戻る</a>');
     }
     else{
-      echo('<a href="http://localhost/saitama-rehabili.com/">戻る</a>');
+      echo('<a href="http://localhost/saitama-rehabili.com/">TOPページに戻る</a>');
     }
     ?>
     </div>

@@ -47,6 +47,13 @@ function contents_maker() {
                         $(news_contents_detail_array[i]).show();
                     }
                 }
+
+                 // 2行
+                 var newsHeight = $("#news").height();
+                 var twoRowHeight = newsHeight / cnt * 2;
+                 $("#news").css({
+                     'cssText': 'max-height:'+ twoRowHeight +'px; overflow-y:scroll;'
+                 });
             }
 
             // SP
@@ -82,6 +89,13 @@ function contents_maker() {
                         $(news_contents_detail_sp_array[i]).show();
                     }
                 }
+
+                // 2行
+                var newsHeight = $("#news").height();
+                var twoRowHeight = newsHeight / cnt_sp * 2;
+                $("#news").css({
+                    'cssText': 'max-height:'+ twoRowHeight +'px; overflow-y:scroll;'
+                });
             }
 		} else {
 			news.innerHTML = '新着情報取得中...'
