@@ -1,3 +1,13 @@
+<?php
+// ブログの取得
+$rss = simplexml_load_file('https://saitama-rehabili.com/feed/');
+$category_list = array();
+// $news_cnt = 0;
+foreach($rss->channel->item as $item){
+    array_push($category_list, $item->category);
+}
+?>
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -33,7 +43,7 @@
                     <div class="color_blue">
                         <p class="fs_22 fs_18_sp">【さいたま県全域に対応】<br class="visible_640">脳梗塞や脳出血後遺症に<br class="visible_640">強い訪問リハビリ・マッサージ</p>
                         <div class="d_flex hidden_640_flex">
-                            <div id="header_logo"><img src="img/logo.png" alt=""></div>
+                            <div id="header_logo"><a href="https://saitama-rehabili.com"><img src="img/logo.png" alt=""></a></div>
                             <div class="ta_center">
                                 <p class="fs_45">さいたま訪問リハビリセンター</p>
                                 <p class="fs_28">Saitama rehabilitation center</p>
@@ -52,15 +62,20 @@
                     <nav id="g-nav">
                         <div id="g-nav-list">
                         <ul class="fs_30">
-                        <li><a href="https://saitama-rehabili.com/blog/">無料体験のお客様の声</a></li>  
-                        <li><a href="https://saitama-rehabili.com/blog/">リハビリ、マッサージについて</a></li>  
+                        <li><a href="https://saitama-rehabili.com">トップ</a></li>
+                        <?php
+                            $category_list_unique = array_unique($category_list);
+                            foreach($category_list_unique as $row){
+                                echo ('<li><a href="https://saitama-rehabili.com/category/'.$row.'">'.$row.'</a></li>');
+                            }
+                        ?>
                         </ul>
                         </div>
                     </nav>
                 </div>
                 <div id="header_title_sp" class="visible_640 color_blue">
                     <div class="d_flex">
-                        <div id="header_logo_sp"><img src="img/logo.png" alt=""></div>
+                        <div id="header_logo_sp"><a href="https://saitama-rehabili.com"><img src="img/logo.png" alt=""></a></div>
                         <div class="ta_center">
                             <p class="fs_45 fs_23_sp">さいたま訪問リハビリセンター</p>
                         </div>

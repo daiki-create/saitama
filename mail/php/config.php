@@ -21,11 +21,11 @@ else{
 //【必須】 サンクスページのURL -- index.htmlからの相対パス、またはhttp://からの絶対パス --
 if($_SERVER['HTTP_HOST']=="noland.sakura.ne.jp")
 {
-    $rm_thanks_page_url = 'http://noland.sakura.ne.jp/saitama/mail/thanks.html';
+    $rm_thanks_page_url = 'http://noland.sakura.ne.jp/saitama/mail/thanks.php';
 }
 if($_SERVER['HTTP_HOST']=="saitama-rehabili.com")
 {
-    $rm_thanks_page_url = 'https://saitama-rehabili.com/mail/thanks.html';
+    $rm_thanks_page_url = 'https://saitama-rehabili.com/mail/thanks.php';
 }
 
 

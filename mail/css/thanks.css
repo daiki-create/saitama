@@ -31,7 +31,13 @@ div#thanks h2 {
 	margin-top: 3em;
 }
 
-div#thanks p {
+div#thanks p{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 2em;
+}
+
+div#thanks > div{
 	width: 90%;
 	margin: 0 auto;
 	margin-top: 2em;
