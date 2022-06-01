@@ -2,7 +2,7 @@ function contents_maker() {
 	
 	var news = document.getElementById( 'news' );
 	var js   = document.getElementById( 'contents-maker-js' );
-	var href = js.getAttribute( 'src' ).replace( /js\/contents-maker\.js/gi, 'php/index.php' );
+	var href = js.getAttribute( 'src' ).replace( /js\/contents-maker_220602\.js/gi, 'php/index.php' );
 	
 	var xhr = new XMLHttpRequest();
 	xhr.open( 'GET', href, true );
